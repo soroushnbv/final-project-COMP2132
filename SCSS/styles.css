@@ -1,0 +1,111 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #425163;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+h1 {
+  margin: 0;
+}
+
+#game-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+#player-section, #computer-section {
+  text-align: center;
+}
+
+.dice-image {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  animation: shakeDice 0.5s ease-in-out; /* Dice animation on every roll */
+}
+
+@keyframes shakeDice {
+  0% {
+    transform: rotate(0);
+  }
+  25% {
+    transform: rotate(-15deg);
+  }
+  50% {
+    transform: rotate(15deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
+}
+#controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+button {
+  background-color: #425163;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 5px;
+  border-radius: 5px;
+  transition: transform 0.3s ease, background-color 0.3s ease; /* Button animation */
+}
+
+button:hover {
+  background-color: #8b0000;
+  transform: scale(1.1); /* Scale button on hover */
+}
+
+footer {
+  background-color: #425163;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}
+
+#round {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#winner {
+  text-align: center;
+  margin-top: 20px;
+  opacity: 0; /* Initially hidden */
+  animation: fadeIn 1s ease forwards; /* Winner fade-in animation */
+}
+
+#winner h2 {
+  color: #425163;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}/*# sourceMappingURL=styles.css.map */
