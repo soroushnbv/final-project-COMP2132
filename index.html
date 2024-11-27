@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+    <link rel="stylesheet" href="./CSS/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Dice Game - By Soroush Nabavi</h1>
+    </header>
+
+    <div id="game-container">
+        <div id="player-section">
+            <h2>Player</h2>
+            <div id="player-dice-container">
+                <img src="images/dice-1.png" id="player-dice-1" class="dice-image" alt="Player Dice 1">
+                <img src="images/dice-1.png" id="player-dice-2" class="dice-image" alt="Player Dice 2">
+            </div>
+            <p>Round Points: <span id="player-round-score">0</span></p>
+            <p>Total Points: <span id="player-total-score">0</span></p>
+        </div>
+
+        <div id="computer-section">
+            <h2>Computer</h2>
+            <div id="computer-dice-container">
+                <img src="images/dice-1.png" id="computer-dice-1" class="dice-image" alt="Computer Dice 1">
+                <img src="images/dice-1.png" id="computer-dice-2" class="dice-image" alt="Computer Dice 2">
+            </div>
+            <p>Round Points: <span id="computer-round-score">0</span></p>
+            <p>Total Points: <span id="computer-total-score">0</span></p>
+        </div>
+
+        <div id="controls">
+            <button id="roll-btn">Roll Dice</button>
+            <button id="reset-btn" style="display: none;">Play Again</button>
+        </div>
+
+        <div id="round">
+            <p>Round: <span id="round-number">1</span></p>
+        </div>
+
+        <div id="winner" style="display: none;">
+            <h2>Game Over</h2>
+            <p id="game-result"></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Soroush Nabavi</p>
+    </footer>
+
+    <script src="./JS/JS.js"></script>
+</body>
+</html>
